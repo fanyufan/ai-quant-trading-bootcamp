@@ -1,3 +1,7 @@
+# 忽略文件
+Desktop.ini
+.agents/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
