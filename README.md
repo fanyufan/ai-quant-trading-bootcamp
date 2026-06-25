@@ -105,6 +105,22 @@ python 2-macd_strategy_2025.py
 
 ---
 
+## 多平台同步推送
+
+本仓库同时托管在 GitHub 与 Gitee。提交代码后，按以下命令分别推送到两个平台：
+
+```bash
+# 推送到 GitHub（本地 main → 远程 main）
+git push origin
+
+# 推送到 Gitee（本地 main → 远程 master）
+git push gitee
+```
+
+> Gitee 仓库的主分支名为 `master`，因此已在 `.git/config` 中配置 `remote.gitee.push = refs/heads/main:refs/heads/master`，无需每次手动指定分支映射。
+
+---
+
 ## 课程内容概览
 
 ### Week 1 · 量化世界的生存法则 / AI 量化交易（2026-02-04）
