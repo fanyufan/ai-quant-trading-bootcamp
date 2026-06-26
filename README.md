@@ -152,6 +152,15 @@ git push gitee
 | 财务数据 | Tushare | 基本面、财务指标数据 |
 | 示例数据 | 本地 CSV | 课程配套数据，可直接复现 |
 
+### 常用数据接口文档
+
+| 数据接口 | 官方文档 / 仓库 |
+|---------|----------------|
+| QMT（迅投） | [https://dict.thinktrader.net/?id=7zqjlm](https://dict.thinktrader.net/?id=7zqjlm) |
+| Tushare | [https://tushare.pro/document/2](https://tushare.pro/document/2) |
+| AKShare | [https://akshare.akfamily.xyz/](https://akshare.akfamily.xyz/) / [GitHub](https://github.com/akfamily/akshare) |
+| BaoStock | [https://baostock.com/](https://baostock.com/) |
+
 > 本仓库中的数据仅供学习与研究使用，不构成任何投资建议。
 
 ---
