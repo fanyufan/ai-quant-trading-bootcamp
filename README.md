@@ -161,6 +161,8 @@ git push gitee
 | AKShare | [https://akshare.akfamily.xyz/](https://akshare.akfamily.xyz/) / [GitHub](https://github.com/akfamily/akshare) |
 | BaoStock | [https://baostock.com/](https://baostock.com/) |
 
+更多数据源对比、按数据项选型建议及官方文档汇总，请见 [docs/data-sources.md](docs/data-sources.md)。
+
 > 本仓库中的数据仅供学习与研究使用，不构成任何投资建议。
 
 ---
