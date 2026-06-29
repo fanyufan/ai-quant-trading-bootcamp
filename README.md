@@ -89,10 +89,10 @@ cd ai-quant-trading-bootcamp
 2. 安装依赖：
 
 ```bash
-pip install -r requirements.txt   # 如果后续提供
-# 或手动安装
-pip install pandas numpy matplotlib tushare
+pip install -r requirements.txt
 ```
+
+> 若只需核心数据接口，可手动安装：`pip install pandas numpy matplotlib tushare`。
 
 3. 进入对应课程目录，运行脚本：
 
