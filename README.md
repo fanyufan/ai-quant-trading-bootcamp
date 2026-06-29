@@ -47,6 +47,8 @@ ai-quant-trading-bootcamp/
 
 ## 环境依赖
 
+本项目基于 **Python 3.11.9** 开发与测试，建议优先使用 Python 3.10 及以上版本。
+
 核心 Python 依赖：
 
 ```bash
