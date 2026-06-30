@@ -75,6 +75,42 @@ ai-quant-trading-bootcamp/
 │           ├── wucai_trade_charles.sql             # 数据库表结构
 │           └── .env.example                        # 环境变量配置示例
 │
+├── week3/                                          # 第三周：Backtrader 回测 + Talib 技术指标库
+│   │
+│   ├── 5-Backtrader回测-20260228/                  # 第五次课：掌握回测引擎 Backtrader
+│   │   ├── 5-掌握回测引擎Backtrader.pdf            # 第五次课讲义
+│   │   ├── data_loader.py                          # 数据加载模块
+│   │   ├── db_config.py                            # 数据库配置
+│   │   ├── 1-双均线策略.py                         # 双均线策略回测
+│   │   ├── 2-MACD策略.py                           # MACD 策略回测
+│   │   ├── 3-RSI策略.py                            # RSI 策略回测
+│   │   ├── 4-布林带策略.py                         # 布林带策略回测
+│   │   ├── 5-乖离率策略.py                         # 乖离率策略回测
+│   │   ├── 6-动量策略.py                           # 动量策略回测
+│   │   ├── 7-自定义策略.py                         # 自定义策略框架
+│   │   ├── strategies/                             # 策略模块目录
+│   │   │   └── macd_divergence.py                  # MACD 底背离策略
+│   │   ├── outputs/                                # 策略回测输出图表
+│   │   └── .env.example                            # 环境变量配置示例
+│   │
+│   ├── 6-Talib技术指标库-20260304/                 # 第六次课：装备 Talib 技术指标库
+│   │   ├── 6-装备Talib技术指标库.pdf               # 第六次课讲义
+│   │   ├── data_loader.py                          # 数据加载模块
+│   │   ├── db_config.py                            # 数据库配置
+│   │   ├── 1-Talib vs Backtrader对比.py            # Talib 与 Backtrader 对比
+│   │   ├── 1-行情数据采集.py                       # 行情数据采集
+│   │   ├── 2-Talib基础用法.py                      # Talib 基础用法
+│   │   ├── 3-K线形态识别.py                        # K 线形态识别
+│   │   ├── 4-RSI策略-优化(穿越确认).py             # RSI 策略优化：穿越确认
+│   │   ├── 5-MACD策略-优化(成交量确认).py          # MACD 策略优化：成交量确认
+│   │   ├── 6-MACD策略-优化(利润锁定).py            # MACD 策略优化：利润锁定
+│   │   ├── 7-布林带策略-优化(中轨止损).py          # 布林带策略优化：中轨止损
+│   │   ├── 8-自适应策略.py                         # 自适应策略
+│   │   ├── 9-形态选股雷达.py                       # 形态选股雷达
+│   │   └── .env.example                            # 环境变量配置示例
+│   │
+│   └── 6-财经日历采集-20260307.py                  # 财经日历数据采集脚本
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -198,6 +234,28 @@ git push gitee
 - 宏观数据、新闻事件、研报数据采集
 - 财经日历与关键催化剂事件跟踪
 - 数据库配置与表结构设计
+
+## Week 3
+
+### 5-Backtrader 回测（2026-02-28）
+
+- Backtrader 回测引擎核心概念：Cerebro、Data、Strategy、Broker
+- 双均线、MACD、RSI、布林带、乖离率、动量策略回测
+- 自定义策略框架与 MACD 底背离策略
+- 数据加载模块与回测结果可视化
+
+### 6-Talib 技术指标库（2026-03-04）
+
+- Talib 与 Backtrader 指标对比
+- Talib 基础用法与 K 线形态识别
+- RSI 策略优化：穿越确认
+- MACD 策略优化：成交量确认与利润锁定
+- 布林带策略优化：中轨止损
+- 自适应策略与形态选股雷达
+
+### 6-财经日历采集（2026-03-07）
+
+- 财经日历数据采集实践
 
 ---
 
