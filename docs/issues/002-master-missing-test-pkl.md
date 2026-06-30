@@ -82,7 +82,6 @@ week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/csi3
 ✅ **已修复**
 
 - GitHub Issue: [#3](https://github.com/fanyufan/ai-quant-trading-bootcamp/issues/3)（已关闭）
-- Gitee Issue：未创建（缺少 GITEE_TOKEN）
 
 ## 修复记录
 
