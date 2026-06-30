@@ -1,4 +1,4 @@
-# AI 量化交易训练营 · Python 依赖
+﻿# AI 量化交易训练营 · Python 依赖
 # 推荐 Python 版本：3.11.9（建议 3.10 及以上）
 # 安装命令：pip install -r requirements.txt
 
@@ -11,16 +11,45 @@ numpy==1.26.4
 # 数据可视化
 matplotlib==3.10.8
 
+# 回测引擎
+backtrader==1.9.78.123
+
+# 技术指标库（K 线形态识别、MACD/RSI/布林带/ADX 等）
+TA-Lib==0.6.8
+
+# 数据库连接
+PyMySQL==1.1.1
+
+# 环境变量读取（db_config.py 使用）
+python-dotenv==1.2.2
+
 # Tushare 金融数据接口（需配置 TUSHARE_TOKEN）
 tushare==1.4.29
 
 # QMT（迅投）本地数据接口（需在已安装 QMT 客户端的 Windows 环境下运行）
 xtquant==250516.1.1
 
-# ==================== 可选依赖（文档推荐数据源） ====================
+# ==================== 可选依赖（按课程需要安装） ====================
 
 # AKShare：免费开源金融数据接口，数据种类丰富
 akshare==1.18.64
 
 # BaoStock：免费 A 股历史数据接口
 baostock==0.9.1
+
+# YAML 配置读取（Week 2 关键催化剂采集使用）
+PyYAML==6.0.3
+
+# OpenAI SDK（Week 2 关键催化剂采集 / AI 驱动分析使用）
+openai==2.24.0
+
+# ==================== 机器学习增强策略依赖 ====================
+
+# 经典机器学习模型与评估指标
+scikit-learn==1.8.0
+
+# LightGBM 梯度提升框架
+lightgbm==4.6.0
+
+# XGBoost 梯度提升框架
+xgboost==3.2.0
