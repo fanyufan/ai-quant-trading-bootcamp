@@ -79,13 +79,29 @@ week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/csi3
 
 ## 状态
 
-⏳ **待修复**
+✅ **已修复**
 
-- GitHub Issue: [#3](https://github.com/fanyufan/ai-quant-trading-bootcamp/issues/3)
+- GitHub Issue: [#3](https://github.com/fanyufan/ai-quant-trading-bootcamp/issues/3)（已关闭）
 - Gitee Issue：未创建（缺少 GITEE_TOKEN）
+
+## 修复记录
+
+已按**方案一**从 MASTER 官方开源数据下载测试数据，放置到本地路径：
+
+```
+week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/
+├── csi300_dl_test.pkl     # 约 163 MB
+├── csi300_dl_train.pkl    # 约 766 MB
+├── csi300_dl_valid.pkl    # 约  18 MB
+├── csi800_dl_test.pkl     # 约 434 MB
+├── csi800_dl_train.pkl    # 约 1.6 GB
+└── csi800_dl_valid.pkl    # 约  47 MB
+```
+
+> ⚠️ 上述 `.pkl` 文件体积较大，不适合直接提交到 Git 仓库。建议需要复现的同学从官方网盘自行下载，或在本机使用 Git LFS 管理。
 
 ---
 
 > 相关文件：
 > - `week6/12-论文复现与策略进化-20260325/CASE-论文复现与策略进化/2-MASTER截面预测.py`
-> - `week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/`（待创建）
+> - `week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/`（已补充本地数据，未提交到 Git）
