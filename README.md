@@ -337,6 +337,8 @@ import os
 os.environ["TUSHARE_TOKEN"] = "your_token_here"
 ```
 
+> 不同子项目的 `requirements.txt` 可能存在版本差异，完整说明请见 [docs/dependency-version-notes.md](docs/dependency-version-notes.md)。
+
 ---
 
 ## 快速开始
