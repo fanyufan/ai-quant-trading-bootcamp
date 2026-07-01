@@ -168,6 +168,42 @@ ai-quant-trading-bootcamp/
 │       │   └── .env                                # 环境变量配置（已忽略）
 │       └── chan.py/                                # 缠论分析开源库（已去内层 .git）
 │
+├── week6/                                          # 第六周：机器学习因子挖掘 + 论文复现与策略进化
+│   │
+│   ├── 11-机器学习因子挖掘-20260321/               # 第十一次课：机器学习因子挖掘
+│   │   ├── 11-机器学习因子挖掘.pdf                 # 第十一次课讲义
+│   │   ├── 1-贵州茅台因子分析.py                   # 单因子分析与可视化
+│   │   ├── 2-工业级特征工程.py                     # 工业级特征工程实现
+│   │   ├── 3-XGBoost涨跌预测.py                    # XGBoost 涨跌预测
+│   │   ├── 4-LightGBM对比与调参.py                 # LightGBM 对比与调参
+│   │   ├── data_loader.py                          # 数据加载模块
+│   │   ├── db_config.py                            # 数据库配置
+│   │   ├── feature_engine.py                       # 特征工程模块
+│   │   ├── ml_engine.py                            # 机器学习引擎
+│   │   └── .env.example                            # 环境变量配置示例
+│   │
+│   └── 12-论文复现与策略进化-20260325/             # 第十二次课：论文复现与策略进化
+│       ├── 12-论文复现与策略进化.pdf               # 第十二次课讲义
+│       ├── CASE-论文复现与策略进化/                # MASTER 论文复现案例
+│       │   ├── 1-MASTER数据与因子.py               # MASTER 数据准备与因子构建
+│       │   ├── 2-MASTER截面预测.py                 # MASTER 截面预测
+│       │   ├── 3-XGBoost截面预测.py                # XGBoost 截面预测对比
+│       │   ├── data_loader.py                      # 数据加载模块
+│       │   ├── db_config.py                        # 数据库配置
+│       │   ├── feature_engine.py                   # 特征工程模块
+│       │   ├── evolution_engine.py                 # 策略进化引擎
+│       │   ├── MASTER_csi300_prediction_results.png  # MASTER 预测结果图
+│       │   └── .env.example                        # 环境变量配置示例
+│       └── MASTER-master/                          # MASTER 官方论文复现源码
+│           ├── base_model.py                       # MASTER 基础模型
+│           ├── master.py                           # MASTER 核心实现
+│           ├── main.py                             # 入口脚本
+│           ├── data/                               # 市场信息数据
+│           ├── model/                              # 预训练模型（.pkl 已忽略）
+│           ├── qlib-update/                        # Qlib 适配代码
+│           ├── README.md                           # 官方说明
+│           └── LICENSE                             # 开源协议
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -354,6 +390,25 @@ git push gitee
 - 因子选股 + 中枢网格组合策略
 - 机器学习增强多因子模型
 - 网格引擎与多因子引擎的模块化设计
+
+## Week 6
+
+### 11-机器学习因子挖掘（2026-03-21）
+
+- 单因子分析：以贵州茅台为例的因子分布与 IC 分析
+- 工业级特征工程：截面特征、时序特征、标签构建
+- XGBoost 涨跌预测模型
+- LightGBM 对比实验与超参数调优
+- 特征工程模块与机器学习引擎的模块化设计
+
+### 12-论文复现与策略进化（2026-03-25）
+
+- MASTER 论文（KDD 2022）核心思想与框架介绍
+- MASTER 数据准备与因子构建
+- MASTER 截面预测实现
+- XGBoost 截面预测对比基准
+- 策略进化引擎设计与论文复现流程
+- 预训练模型与官方源码集成
 
 ---
 
