@@ -5,9 +5,9 @@
 # ==================== 核心依赖（项目脚本直接使用） ====================
 
 # 数据处理与分析
-pandas==2.2.2          # 注：Week 7/14 word2vec/hotel 子项目要求 2.2.3，Week 8/15、Week 10/20 要求 >=2.0.0；主清单保持本地稳定版 2.2.2
-numpy==1.26.4          # 注：Week 7/14 向量数据库要求 2.4.0、word2vec 要求 2.2.6、hotel 要求 2.2.5，Week 8/15、Week 10/20 要求 >=1.24.0；主清单保持本地稳定版 1.26.4
-scipy==1.17.1          # 科学计算，Week 7/13 SVD 因子挖掘与统计检验
+pandas==2.2.2          # 注：Week 7/14 word2vec/hotel 子项目要求 2.2.3，Week 8/15、Week 10/20、Week 11/12 要求 >=2.0.0；主清单保持本地稳定版 2.2.2
+numpy==1.26.4          # 注：Week 7/14 向量数据库要求 2.4.0、word2vec 要求 2.2.6、hotel 要求 2.2.5，Week 8/15、Week 10/20、Week 11/12 要求 >=1.24.0；主清单保持本地稳定版 1.26.4
+scipy==1.17.1          # 科学计算，Week 7/13 SVD 因子挖掘与统计检验；注：Week 11/21 CASE-C 多因子选股要求 >=1.10.0
 
 # 数据可视化
 matplotlib==3.10.8     # 注：Week 7/14 hotel 子项目要求 3.10.1，Week 5 chan.py 要求 >=3.5.3；主清单保持本地稳定版 3.10.8
@@ -22,16 +22,16 @@ TA-Lib==0.6.8
 quantstats==0.0.81
 
 # 数据库连接
-PyMySQL==1.1.1
+PyMySQL==1.1.1         # 注：子项目多写为 pymysql>=1.1.0，与 PyMySQL 为同一包
 
 # 环境变量读取（db_config.py 使用）
-python-dotenv==1.2.2   # 注：Week 10/20 交易团队工作流子项目要求 >=1.0.0
+python-dotenv==1.2.2   # 注：Week 10/20、Week 11/12 子项目要求 >=1.0.0
 
 # Tushare 金融数据接口（需配置 TUSHARE_TOKEN）
 tushare==1.4.29
 
 # QMT（迅投）本地数据接口（需在已安装 QMT 客户端的 Windows 环境下运行）
-xtquant==250516.1.1    # 注：Week 10/20 交易团队工作流子项目使用但未指定版本
+xtquant==250516.1.1    # 注：Week 10/20、Week 11/12 子项目使用但未指定版本
 
 # ==================== 可选依赖（按课程需要安装） ====================
 
@@ -42,7 +42,7 @@ akshare==1.18.64       # 注：Week 8/15 智能研报生成子项目要求 >=1.1
 baostock==0.9.1        # 注：Week 5 chan.py 子项目要求 >=0.8.8
 
 # YAML 配置读取（Week 2 关键催化剂采集使用）
-PyYAML==6.0.3
+PyYAML==6.0.3          # 注：Week 11/12 子项目要求 >=6.0
 
 # OpenAI SDK（Week 2 关键催化剂采集 / Week 7 LLM 报告生成 / AI 驱动分析使用）
 openai==2.24.0         # 注：Week 7/14 向量数据库子项目要求 2.14.0，Week 8/15、Week 10/20 要求 >=1.0.0
@@ -59,19 +59,19 @@ jieba==0.42.1          # 注：Week 8/15 智能研报生成子项目要求 >=0.4
 faiss-cpu==1.13.2      # 注：Week 7/14 向量数据库子项目要求 1.7.4，Week 8/15、Week 10/20 要求 >=1.7.4
 
 # LangChain 生态（Week 8/15 智能研报 Agent / Week 10/20 交易团队工作流）
-langchain==1.2.15      # 注：Week 8/15、Week 10/20 子项目要求 >=0.3.0
-langchain-community==0.4.1    # 注：Week 8/15、Week 10/20 子项目要求 >=0.3.0
+langchain==1.2.15      # 注：Week 8/15、Week 10/20、Week 11/12 子项目要求 >=0.3.0
+langchain-community==0.4.1    # 注：Week 8/15、Week 10/20、Week 11/12 子项目要求 >=0.3.0
 langchain-text-splitters==1.1.2    # 注：Week 7/14 ChatPDF-Faiss 子项目要求 1.1.0，Week 8/15、Week 10/20 要求 >=0.3.0
 
 # LangGraph 工作流与状态检查点
-langgraph==1.1.6       # 注：Week 8/15 智能研报生成子项目要求 >=0.2.0，Week 10/20 交易团队工作流要求 >=0.2.50
+langgraph==1.1.6       # 注：Week 8/15 智能研报生成子项目要求 >=0.2.0，Week 10/20、Week 11/12 要求 >=0.2.50
 langgraph-checkpoint==4.0.1    # 注：Week 8/15 智能研报生成子项目要求 >=2.0.0
 
 # DeepAgents 框架（Week 8/15 智能研报生成 Agent / Week 10/20 交易团队工作流）
-deepagents==0.5.3      # 注：Week 8/15 智能研报生成子项目要求 >=0.4.10，Week 10/20 交易团队工作流要求 >=0.0.10
+deepagents==0.5.3      # 注：Week 8/15 智能研报生成子项目要求 >=0.4.10，Week 10/20、Week 11/12 要求 >=0.0.10
 
 # 通义千问 API（embedding / 大模型对话）
-dashscope==1.25.17     # 注：Week 8/15 智能研报生成子项目要求 >=1.14.1，Week 10/20 交易团队工作流要求 >=1.20.0
+dashscope==1.25.17     # 注：Week 8/15 智能研报生成子项目要求 >=1.14.1，Week 10/20、Week 11/12 要求 >=1.20.0
 
 # 混合检索 BM25
 rank-bm25==0.2.2       # 注：Week 8/15、Week 10/20 子项目要求 >=0.2.2
@@ -90,7 +90,7 @@ nltk==3.9.1
 # ==================== 机器学习增强策略依赖 ====================
 
 # 经典机器学习模型与评估指标
-scikit-learn==1.8.0    # 注：Week 7/14 word2vec/hotel 子项目要求 1.6.1
+scikit-learn==1.8.0    # 注：Week 7/14 word2vec/hotel 子项目要求 1.6.1，Week 11/21 CASE-C 多因子选股要求 >=1.3.0
 
 # LightGBM 梯度提升框架
 lightgbm==4.6.0
@@ -101,8 +101,14 @@ xgboost==3.2.0
 # ==================== 子项目额外依赖说明 ====================
 # 以下包仅在特定子项目的 requirements.txt 中出现，主清单未单独列出：
 # - requests>=2.22.0  （Week 5 chan.py Script，用于网络请求）
+# - requests>=2.31.0  （Week 11 投资晨会工作流 / 龙头战法，用于推送请求）
 # - ipython>=8.5.0    （Week 5 chan.py Script，用于交互式环境）
 # - modelscope>=1.9.0、torch>=2.0.0、transformers>=4.30.0
 #   （Week 8/15 智能研报生成，用于 Rerank 模型；如不需要 Rerank 可跳过）
 # - langchain-core>=0.3.0  （Week 10/20 交易团队工作流，LangGraph 编排核心依赖）
-# - apscheduler>=3.10.0    （Week 10/20 交易团队工作流，定时调度自动触发）
+# - apscheduler>=3.10.0    （Week 10/20 交易团队工作流、Week 11/12 AI 量化系统，定时调度自动触发）
+# - fastapi>=0.110.0、uvicorn[standard]>=0.27.0、jinja2>=3.1.0、sse-starlette>=2.0.0
+#   （Week 11/12 AI 量化系统，Web 控制台 REST + SSE 框架）
+# - gradio>=4.0.0、plotly>=5.0.0
+#   （Week 11/12 AI 量化系统 / 龙头战法，投研对话界面与可视化）
+# - chinese-calendar>=1.10.0  （Week 11/12 子项目，交易日判断）
