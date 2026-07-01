@@ -204,6 +204,100 @@ ai-quant-trading-bootcamp/
 │           ├── README.md                           # 官方说明
 │           └── LICENSE                             # 开源协议
 │
+├── week7/                                          # 第七周：QuantStats 绩效分析 + RAG 投研系统
+│   │
+│   ├── 13-QuantStats绩效分析与报告.pdf             # 第十三次课讲义
+│   ├── 13-QuantStats绩效分析与报告-20260328/       # 第十三次课代码与数据
+│   │   ├── 1-QuantStats绩效分析.py                 # 使用 QuantStats 生成策略绩效报告
+│   │   ├── 2-SVD因子挖掘与分析.py                  # 基于 SVD 的因子挖掘与分析
+│   │   ├── 3-实盘交易绩效分析.py                   # 实盘交易记录绩效分析
+│   │   ├── 4-实盘交易绩效分析Plus.py               # 实盘交易绩效分析增强版
+│   │   ├── data_loader.py                          # 数据加载模块
+│   │   ├── db_config.py                            # 数据库配置
+│   │   ├── feature_engine.py                       # 特征工程模块
+│   │   ├── ml_engine.py                            # 机器学习引擎
+│   │   ├── llm_engine.py                           # LLM 报告生成引擎
+│   │   ├── report_engine.py                        # 报告引擎
+│   │   ├── translations.yaml                       # 中文术语翻译配置
+│   │   ├── 历史成交_cy_260101-260325.csv            # 示例实盘成交记录
+│   │   └── .env.example                            # 环境变量配置示例
+│   │
+│   ├── 14-RAG投研系统搭建.pdf                      # 第十四次课讲义
+│   └── 14-RAG投研系统搭建-20260401/                # 第十四次课代码与数据
+│       ├── CASE-向量数据库/                        # 向量数据库与 embedding 实践
+│       │   ├── 1-embedding计算.py                  # Embedding 计算
+│       │   ├── 2-embedding-faiss-元数据.py         # FAISS 向量索引与元数据
+│       │   └── requirements.txt                    # 依赖说明
+│       ├── Case-ChatPDF-Faiss/                     # 基于 Faiss 的 ChatPDF 案例
+│       │   ├── chatpdf-faiss.ipynb                 # Jupyter 交互示例
+│       │   ├── chatpdf-faiss.py                    # ChatPDF 主脚本
+│       │   ├── requirements.txt                    # 依赖说明
+│       │   ├── vector_db/                          # FAISS 向量数据库
+│       │   └── 财报_中芯国际：中芯国际2025年年度报告.pdf  # 示例财报 PDF
+│       ├── hotel_recommendation/                   # Word2Vec 推荐系统案例
+│       │   ├── hotel_rec.ipynb                     # 酒店推荐 Jupyter 示例
+│       │   ├── hotel_rec.py                        # 酒店推荐脚本
+│       │   ├── Seattle_Hotels.csv                  # 示例数据
+│       │   └── requirements.txt                    # 依赖说明
+│       └── word2vec/                               # Word2Vec 词向量训练案例
+│           ├── word_seg.ipynb                      # 分词 Jupyter 示例
+│           ├── word_seg.py                         # 中文分词脚本
+│           ├── word_similarity.ipynb               # 词相似度 Jupyter 示例
+│           ├── word_similarity.py                  # 词相似度计算脚本
+│           ├── utils/                              # 工具函数
+│           ├── models/                             # 训练好的 Word2Vec 模型
+│           ├── journey_to_the_west/                # 《西游记》语料
+│           └── three_kingdoms/                     # 《三国演义》语料
+│
+├── week8/                                          # 第八周：智能研报生成 + 舆情感知与事件驱动
+│   │
+│   ├── 15-智能研报生成.pdf                         # 第十五次课讲义
+│   ├── 15-智能研报生成-20260404/                   # 第十五次课代码与数据
+│   │   ├── agent.py                                # 智能研报生成 Agent
+│   │   ├── preprocess.py                           # 数据预处理：解析 PDF、构建向量库
+│   │   ├── requirements.txt                        # 依赖说明
+│   │   ├── data/                                   # 研报、财报、新闻、向量库等数据
+│   │   │   ├── reports/                            # 机构研报 PDF
+│   │   │   ├── parsed/                             # PDF 解析后的文本与页码信息
+│   │   │   ├── parsed_ocr/                         # OCR 解析结果
+│   │   │   ├── financial_reports/                  # 上市公司财报 PDF
+│   │   │   ├── financial_data/                     # 财务报表数据（CSV）
+│   │   │   ├── news/                               # 新闻数据（JSON）
+│   │   │   ├── sentiment/                          # 情感分析结果
+│   │   │   ├── events/                             # 事件抽取结果
+│   │   │   ├── vector_db/                          # 单文档 FAISS 向量索引
+│   │   │   ├── vector_store/                       # 统一向量索引
+│   │   │   └── documents.db                        # SQLite 文档元数据库
+│   │   └── skills/                                 # Agent 技能目录
+│   │       ├── read-pdf/                           # 读取与解析 PDF 财报/研报
+│   │       ├── financial-analysis/                 # 财务分析技能
+│   │       ├── compare-reports/                    # 研报对比技能
+│   │       ├── sentiment-analysis/                 # 情感分析技能
+│   │       ├── stock-price/                        # 股价查询技能
+│   │       ├── web-search/                         # 网络搜索技能
+│   │       └── write-report/                       # 研报生成技能
+│   │
+│   ├── 16-舆情感知与事件驱动.pdf                   # 第十六次课讲义
+│   └── 16-舆情感知与事件驱动-20260408/             # 第十六次课代码与数据
+│       ├── CASE-AI量化助手（nanobot）/             # AI 量化助手完整案例
+│       │   ├── agent.py                            # nanobot Agent 入口
+│       │   ├── config.json                         # Agent 配置
+│       │   ├── AGENTS.md                           # Agent 说明文档
+│       │   ├── data/                               # 新闻、事件等输入数据
+│       │   ├── output/                             # 情感、事件、恐惧指数等输出
+│       │   ├── memory/                             # 记忆文件
+│       │   ├── reports/                            # 生成的研报
+│       │   ├── sessions/                           # 会话记录
+│       │   └── skills/                             # Agent 技能目录
+│       └── nanobot-main/                           # nanobot 开源项目源码
+│           ├── nanobot/                            # Python 核心代码
+│           ├── bridge/                             # TypeScript Bridge
+│           ├── tests/                              # 单元测试
+│           ├── Dockerfile / docker-compose.yml     # 容器化配置
+│           ├── pyproject.toml                      # 项目配置
+│           ├── README.md                           # 官方说明
+│           └── LICENSE                             # 开源协议
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -409,6 +503,47 @@ git push gitee
 - XGBoost 截面预测对比基准
 - 策略进化引擎设计与论文复现流程
 - 预训练模型与官方源码集成
+
+## Week 7
+
+### 13-QuantStats 绩效分析与报告（2026-03-28）
+
+- QuantStats 策略绩效报告生成与解读
+- 关键绩效指标：收益率、夏普比率、最大回撤、Calmar、Sortino 等
+- 基于 SVD 的因子挖掘与可视化分析
+- 实盘交易记录的绩效归因与多维度评估
+- LLM 驱动的绩效报告自动生成
+- 中文术语翻译配置与模块化报告引擎
+
+### 14-RAG 投研系统搭建（2026-04-01）
+
+- RAG（检索增强生成）基本原理与投研应用场景
+- Embedding 计算与 FAISS 向量数据库构建
+- 基于 ChatPDF-Faiss 的财报问答系统
+- Word2Vec 词向量训练：分词、相似度计算与推荐系统
+- 向量索引、元数据管理与页码溯源
+- 多数据源（财报、新闻、研报）的向量化检索实践
+
+## Week 8
+
+### 15-智能研报生成（2026-04-04）
+
+- AI Agent 驱动的智能研报生成流程
+- PDF 财报/研报解析：基础解析与多模态 OCR 解析
+- FAISS 向量知识库构建与 RAG 查询
+- 财务分析技能：比率分析、同业对比
+- 情感分析技能：新闻情绪、舆情打分
+- 研报对比与事件抽取
+- 网络搜索、股价查询与研报自动撰写
+
+### 16-舆情感知与事件驱动（2026-04-08）
+
+- 舆情监测与事件驱动策略框架
+- nanobot 量化助手：配置、记忆、会话与技能管理
+- 新闻情感分析、事件抽取与市场情绪指标
+- 恐惧指数、Polymarket 等另类情绪数据源
+- AI 量化助手完整工作流：数据 → 分析 → 报告
+- nanobot 开源项目源码解析与二次开发
 
 ---
 
