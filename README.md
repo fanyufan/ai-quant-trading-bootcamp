@@ -834,10 +834,4 @@ git push gitee
 
 本项目采用 [MIT License](LICENSE) 开源许可。
 
----
 
-## 作者
-
-- **fanyufan** · [734051844@qq.com](mailto:734051844@qq.com)
-
-欢迎通过 Issue 或 Pull Request 交流讨论。
