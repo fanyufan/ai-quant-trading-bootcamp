@@ -1,4 +1,4 @@
-﻿# AI 量化交易训练营 · Python 依赖
+# AI 量化交易训练营 · Python 依赖
 # 推荐 Python 版本：3.11.9（建议 3.10 及以上）
 # 安装命令：pip install -r requirements.txt
 
@@ -7,6 +7,7 @@
 # 数据处理与分析
 pandas==2.2.2
 numpy==1.26.4
+scipy==1.17.1          # 科学计算，Week 7/13 SVD 因子挖掘与统计检验
 
 # 数据可视化
 matplotlib==3.10.8
@@ -16,6 +17,9 @@ backtrader==1.9.78.123
 
 # 技术指标库（K 线形态识别、MACD/RSI/布林带/ADX 等）
 TA-Lib==0.6.8
+
+# 绩效分析（Week 7/13 QuantStats 策略绩效报告）
+quantstats==0.0.81
 
 # 数据库连接
 PyMySQL==1.1.1
@@ -40,8 +44,48 @@ baostock==0.9.1
 # YAML 配置读取（Week 2 关键催化剂采集使用）
 PyYAML==6.0.3
 
-# OpenAI SDK（Week 2 关键催化剂采集 / AI 驱动分析使用）
+# OpenAI SDK（Week 2 关键催化剂采集 / Week 7 LLM 报告生成 / AI 驱动分析使用）
 openai==2.24.0
+
+# PDF 解析（Week 8/15 智能研报读取财报/研报 PDF）
+PyPDF2==3.0.1
+
+# 中文分词（Week 7/14 Word2Vec / Week 8/15 混合检索）
+jieba==0.42.1
+
+# ==================== RAG 与 AI Agent 依赖 ====================
+
+# 向量数据库（Week 7/14 RAG 投研系统、Week 8/15 智能研报生成）
+faiss-cpu==1.13.2
+
+# LangChain 生态（Week 8/15 智能研报 Agent）
+langchain==1.2.15
+langchain-community==0.4.1
+langchain-text-splitters==1.1.2
+
+# LangGraph 工作流与状态检查点
+langgraph==1.1.6
+langgraph-checkpoint==4.0.1
+
+# DeepAgents 框架（Week 8/15 智能研报生成 Agent）
+deepagents==0.5.3
+
+# 通义千问 API（embedding / 大模型对话）
+dashscope==1.25.17
+
+# 混合检索 BM25
+rank-bm25==0.2.2
+
+# Token 计算（Week 8/16 nanobot 量化助手）
+tiktoken==0.12.0
+
+# ==================== NLP 案例依赖 ====================
+
+# Word2Vec 词向量训练（Week 7/14 RAG 投研系统 word2vec 案例）
+gensim==4.3.3
+
+# NLTK 自然语言处理（Week 7/14 酒店推荐案例）
+nltk==3.9.1
 
 # ==================== 机器学习增强策略依赖 ====================
 
