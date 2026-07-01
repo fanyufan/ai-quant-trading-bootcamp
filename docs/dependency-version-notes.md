@@ -125,7 +125,7 @@
 
 ## 遇到问题怎么办？
 
-1. **主清单能跑通大部分课程**：`pip install -r requirements.txt` 后，Week 1-10 核心示例通常可正常运行。
+1. **主清单能跑通大部分课程**：`pip install -r requirements.txt` 后，Week 1-12 核心示例通常可正常运行。
 2. **子项目报依赖错误**：进入对应子项目目录，安装其子项目 `requirements.txt`：
    ```bash
    cd "week7/14-RAG投研系统搭建-20260401/CASE-向量数据库"
