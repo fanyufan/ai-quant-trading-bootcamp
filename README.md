@@ -8,7 +8,7 @@
 
 ## 目录结构
 
-```
+```text
 ai-quant-trading-bootcamp/
 ├── week1/                                          # 第一周：量化世界的生存法则 / AI 量化交易 + 金融基础速通
 │   │
