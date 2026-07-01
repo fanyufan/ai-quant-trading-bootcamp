@@ -398,6 +398,81 @@ ai-quant-trading-bootcamp/
 │           ├── vendor/charles_agent/               # Charles 投研 Agent
 │           └── outputs/                            # 研报与运行记录
 │
+├── week11/                                         # 第十一周：投资晨会 + 实盘作战与 CEO 控制台
+│   │
+│   ├── 21-投资晨会.pdf                             # 第二十一次课讲义
+│   ├── 21-投资晨会-20260425/                       # 第二十一次课代码与数据
+│   │   ├── CASE-A-板块数据准备/                    # 板块指数与成分股数据准备
+│   │   │   ├── sector_index_builder.py             # 板块指数构建
+│   │   │   ├── stock_kline_loader.py               # 个股 K 线加载
+│   │   │   ├── industry_meta.py                    # 行业元数据
+│   │   │   ├── run_init.py                         # 初始化跑批
+│   │   │   ├── run_daily.py                        # 每日更新
+│   │   │   └── sql/schema.sql                      # 数据库表结构
+│   │   ├── CASE-B-板块轮动分析/                    # 板块轮动与拐点识别
+│   │   │   ├── industry_strength.py                # 行业强度计算
+│   │   │   ├── inflection_detector.py              # 拐点检测
+│   │   │   ├── rotation_insights.py                # 轮动洞察生成
+│   │   │   ├── backtest.py                         # 轮动策略回测
+│   │   │   └── outputs/                            # 轮动事件与阶段分布输出
+│   │   ├── CASE-C-多因子选股/                      # 基本面多因子选股
+│   │   │   ├── factor_lib.py                       # 因子库
+│   │   │   ├── preprocessor.py                     # 数据预处理
+│   │   │   ├── layered_backtest.py                 # 分层回测
+│   │   │   ├── stock_pool.py                       # 股票池构建
+│   │   │   ├── synthesizer.py                      # 因子合成
+│   │   │   └── data/                               # 沪深300成分股与基本面数据
+│   │   └── CASE-D-投资晨会工作流/                  # 投资晨会 LangGraph 工作流
+│   │       ├── graph.py                            # 工作流图
+│   │       ├── scheduler.py                        # 定时调度
+│   │       ├── pusher.py                           # 结果推送
+│   │       └── lib/                                # 因子与轮动运行器
+│   │
+│   ├── 22-实盘作战与CEO控制台.pdf                  # 第二十二次课讲义
+│   └── 22-实盘作战与CEO控制台-20260429/            # 第二十二次课代码与数据
+│       ├── CASE-AI量化系统/                        # 集成 AI 量化系统（CEO 控制台版）
+│       │   ├── app.py                              # Web 控制台入口
+│       │   ├── scheduler.py                        # 任务调度
+│       │   ├── routes/                             # 路由：回测 / 实盘 / 晨会 / 系统
+│       │   ├── pages/                              # Streamlit 页面
+│       │   ├── templates/                          # Web 页面模板
+│       │   ├── lib/                                # 回测、实盘、策略注册等工具库
+│       │   ├── dragon_strategy/                    # 龙头战法策略模块
+│       │   ├── live_trading/                       # 实盘交易循环与 miniQMT 交易员
+│       │   ├── morning_brief/                      # 晨会简报生成
+│       │   ├── alerting/                           # 告警路由
+│       │   ├── config/                             # 策略池、观察池、模拟持仓配置
+│       │   ├── outputs/                            # 运行输出与状态记录
+│       │   └── .env.example                        # 环境变量配置示例
+│       └── CASE-龙头战法/                          # 龙头战法独立案例
+│           ├── dragon_strategy/                    # 龙头选股与回测
+│           └── outputs/                            # 回测结果输出
+│
+├── week12/                                         # 第十二周：团队复盘与持续进化 + 毕业路演
+│   │
+│   ├── 23-团队复盘与持续进化.pdf                   # 第二十三次课讲义
+│   ├── 23-团队复盘与持续进化-20260509/             # 第二十三次课代码与数据
+│   │   ├── CASE-AI量化系统/                        # 复盘版 AI 量化系统
+│   │   │   ├── app.py                              # Web 控制台入口
+│   │   │   ├── routes/                             # 新增复盘 / 参数调优路由
+│   │   │   ├── attribution/                        # Brinson 归因模块
+│   │   │   ├── parameter_tuning/                   # Walk-Forward 参数调优
+│   │   │   ├── strategy_lifecycle/                 # 策略生命周期注册表
+│   │   │   ├── lib/                                # 包含 Brinson 真实归因实现
+│   │   │   └── .env.example                        # 环境变量配置示例
+│   │   ├── CASEA-Brinson归因/                      # Brinson 归因独立案例
+│   │   ├── CASEB-Walk-Forward过拟合检测/           # Walk-Forward 过拟合检测
+│   │   └── CASEC-策略生命周期/                     # 策略生命周期管理
+│   │
+│   ├── 24-毕业路演-AI私募基金发布会.pdf             # 第二十四次课讲义
+│   └── 24-毕业路演-AI私募基金发布会-20260513/       # 第二十四次课代码与数据
+│       └── CASE-AI量化系统/                        # 毕业版 AI 量化系统
+│           ├── app.py                              # Web 控制台入口
+│           ├── ml_strategy/                        # ML 概率策略模块
+│           ├── routes/                             # 路演版路由
+│           ├── outputs/                            # 路演材料输出（pitch deck 等）
+│           └── .env.example                        # 环境变量配置示例
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -683,6 +758,42 @@ git push gitee
 - Charles 投研 / Kris 风控 / Zoe 宏观 / Trader 交易 / Human 审核节点
 - 状态机、调度器与端到端策略执行
 - 团队工作流的模块化设计与扩展
+
+## Week 11
+
+### 21-投资晨会（2026-04-25）
+
+- 投资晨会工作流设计：数据准备 → 板块轮动 → 多因子选股 → 简报推送
+- 板块数据准备：行业指数构建、成分股 K 线、行业元数据
+- 板块轮动分析：行业强度、拐点检测、轮动洞察与回测
+- 多因子选股：基本面因子库、预处理、分层回测与因子合成
+- LangGraph 投资晨会工作流：定时调度与结果推送
+
+### 22-实盘作战与 CEO 控制台（2026-04-29）
+
+- 实盘作战框架：回测、实盘、晨会、风控一体化控制台
+- AI 量化系统 Web 控制台：路由、模板、任务调度与状态管理
+- 龙头战法策略：选股逻辑、回测与结果输出
+- 实盘交易循环：miniQMT 交易员、状态存储、告警路由
+- CEO 控制台配置：策略池、观察池、模拟持仓与系统监控
+
+## Week 12
+
+### 23-团队复盘与持续进化（2026-05-09）
+
+- 量化团队复盘框架：收益归因、过拟合检测、策略生命周期管理
+- Brinson 归因：配置效应、选股效应、交互效应与真实交易归因
+- Walk-Forward 过拟合检测：参数稳健性、样本外测试与实验记录
+- 策略生命周期管理：策略注册、状态跟踪、上下线与绩效监控
+- 复盘版 AI 量化系统：归因、参数调优与生命周期模块集成
+
+### 24-毕业路演：AI 私募基金发布会（2026-05-13）
+
+- AI 量化私募基金路演材料：策略体系、风控体系、团队架构与业绩展示
+- 毕业版 AI 量化系统：整合回测、实盘、晨会、归因、风控与生命周期
+- ML 概率策略模块：特征工程、机器学习引擎与概率化交易信号
+- 路演材料自动化输出：HTML pitch deck、策略注册表与运行记录
+- 从策略研究到基金产品的完整闭环
 
 ---
 
