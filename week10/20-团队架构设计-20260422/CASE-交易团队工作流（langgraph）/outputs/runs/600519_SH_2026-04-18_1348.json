@@ -1,0 +1,73 @@
+{
+  "stock_code": "600519.SH",
+  "capital": 1000000.0,
+  "investment_view": {
+    "stance": "bullish",
+    "confidence": 0.85,
+    "summary": "贵州茅台正处于战略转型关键期，估值已反映最悲观预期，2026年Q1业绩超预期+高分红+低估值构成显著修复机会",
+    "catalysts": [
+      "4月25日一季报正式发布验证超预期",
+      "批价企稳至1800-2000元",
+      "i茅台用户粘性增强（MAU超1531万）"
+    ],
+    "risks": [
+      "2026年Q2批价跌破1500元且持续3个月",
+      "i茅台用户MAU连续两季度环比下降超15%"
+    ],
+    "report_md_path": "D:\\推荐系统\\量化交易-2\\20-团队架构设计\\CASE-交易团队工作流（langgraph）\\outputs\\reports\\600519_SH_20260418_134815.md",
+    "report_html_path": "D:\\推荐系统\\量化交易-2\\20-团队架构设计\\CASE-交易团队工作流（langgraph）\\outputs\\reports\\600519_SH_20260418_134815.html"
+  },
+  "trade_signal": {
+    "stock_code": "600519.SH",
+    "direction": "buy",
+    "quantity": 100,
+    "price": 1407.24,
+    "reason": "分歧: Charles 强势 bullish(0.85), MACD death_cross -> 小仓试探",
+    "strategy": "MACD(12,26,9)",
+    "latest_signal": "death_cross",
+    "latest_close": 1407.24,
+    "backtest_winrate": 38.5,
+    "backtest_total_return": -12.61
+  },
+  "risk_verdict": {
+    "decision": "approve",
+    "is_approved": true,
+    "reason": "所有检查通过",
+    "rule_name": "综合审批",
+    "suggested_max_pct": 1.0
+  },
+  "approved": true,
+  "trade_result": {
+    "dry_run": true,
+    "order_id": null,
+    "submitted_at": "2026-04-18T13:48:20",
+    "note": "dry-run: buy 100 @ 1407.24"
+  },
+  "messages": [
+    {
+      "role": "charles",
+      "time": "13:48:15",
+      "content": "bullish (0.85) -- 贵州茅台正处于战略转型关键期，估值已反映最悲观预期，2026年Q1业绩超预期+高分红+低估值构成显著修复机会"
+    },
+    {
+      "role": "zoe",
+      "time": "13:48:18",
+      "content": "buy 100股 @ 1407.24 (分歧: Charles 强势 bullish(0.85), MACD death_cross -> 小仓试探)"
+    },
+    {
+      "role": "kris",
+      "time": "13:48:20",
+      "content": "approve -- 所有检查通过"
+    },
+    {
+      "role": "human",
+      "time": "13:48:20",
+      "content": "approved "
+    },
+    {
+      "role": "trader",
+      "time": "13:48:20",
+      "content": "dry-run: buy 100 @ 1407.24"
+    }
+  ]
+}

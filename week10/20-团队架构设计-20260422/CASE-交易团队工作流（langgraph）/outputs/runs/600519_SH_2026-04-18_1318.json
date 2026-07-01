@@ -1,0 +1,74 @@
+{
+  "stock_code": "600519.SH",
+  "capital": 1000000.0,
+  "investment_view": {
+    "stance": "bullish",
+    "confidence": 0.82,
+    "summary": "茅台业绩拐点已现，Q1营收/净利双超预期13.3%/17.2%，直销放量与批价回升验证复苏，当前处于估值底部与催化剂密集释放期。",
+    "catalysts": [
+      "4月25日一季报正式发布确认超预期业绩",
+      "飞天合同价提至1269元/瓶价格传导效应显现",
+      "i茅台平台用户突破5000万带动直销占比持续提升"
+    ],
+    "risks": [
+      "终端批价跌破1600元并持续低于1550元超30天",
+      "宏观经济超预期下行影响高端消费信心",
+      "政策监管加码影响营销创新空间"
+    ],
+    "report_md_path": "D:\\推荐系统\\量化交易-2\\20-团队架构设计\\CASE-交易团队工作流（langgraph）\\outputs\\reports\\600519_SH_20260418_131815.md",
+    "report_html_path": "D:\\推荐系统\\量化交易-2\\20-团队架构设计\\CASE-交易团队工作流（langgraph）\\outputs\\reports\\600519_SH_20260418_131815.html"
+  },
+  "trade_signal": {
+    "stock_code": "600519.SH",
+    "direction": "buy",
+    "quantity": 100,
+    "price": 1407.24,
+    "reason": "分歧: Charles 强势 bullish(0.82), MACD death_cross -> 小仓试探",
+    "strategy": "MACD(12,26,9)",
+    "latest_signal": "death_cross",
+    "latest_close": 1407.24,
+    "backtest_winrate": 38.5,
+    "backtest_total_return": -12.61
+  },
+  "risk_verdict": {
+    "decision": "approve",
+    "is_approved": true,
+    "reason": "所有检查通过",
+    "rule_name": "综合审批",
+    "suggested_max_pct": 1.0
+  },
+  "approved": true,
+  "trade_result": {
+    "dry_run": true,
+    "order_id": null,
+    "submitted_at": "2026-04-18T13:18:20",
+    "note": "dry-run: buy 100 @ 1407.24"
+  },
+  "messages": [
+    {
+      "role": "charles",
+      "time": "13:18:15",
+      "content": "bullish (0.82) -- 茅台业绩拐点已现，Q1营收/净利双超预期13.3%/17.2%，直销放量与批价回升验证复苏，当前处于估值底部与催化剂密集释放期。"
+    },
+    {
+      "role": "zoe",
+      "time": "13:18:18",
+      "content": "buy 100股 @ 1407.24 (分歧: Charles 强势 bullish(0.82), MACD death_cross -> 小仓试探)"
+    },
+    {
+      "role": "kris",
+      "time": "13:18:20",
+      "content": "approve -- 所有检查通过"
+    },
+    {
+      "role": "human",
+      "time": "13:18:20",
+      "content": "approved "
+    },
+    {
+      "role": "trader",
+      "time": "13:18:20",
+      "content": "dry-run: buy 100 @ 1407.24"
+    }
+  ]
+}
