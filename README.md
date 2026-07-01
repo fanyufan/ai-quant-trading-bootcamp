@@ -353,6 +353,51 @@ ai-quant-trading-bootcamp/
 │           ├── models/                             # 训练好的 RL 模型
 │           └── outputs/                            # 训练与回测输出图表
 │
+├── week10/                                         # 第十周：强化学习与风控体系 + 团队架构设计
+│   │
+│   ├── 19-强化学习与风控体系.pdf                   # 第十九次课讲义
+│   ├── 19-强化学习与风控体系-20260418/             # 第十九次课代码与数据
+│   │   ├── CASE-Kris的风控体系/                    # Kris 的风控体系案例
+│   │   │   ├── .env.example                        # 环境变量配置示例
+│   │   │   ├── 1-风控引擎.py                       # 风控引擎
+│   │   │   ├── 2-ATR风控实战.py                    # ATR 风控实战
+│   │   │   ├── 3-事件风控实战.py                   # 事件风控实战
+│   │   │   ├── 4-宏观门控实战.py                   # 宏观门控实战
+│   │   │   ├── data_loader.py                      # 数据加载模块
+│   │   │   ├── db_config.py                        # 数据库配置
+│   │   │   └── outputs/                            # 风控可视化输出图表
+│   │   └── CASE-基于RL的交易策略/                  # 基于 RL 的交易策略案例
+│   │       ├── .env.example                        # 环境变量配置示例
+│   │       ├── 6-高频做市模拟.py                   # 高频做市模拟
+│   │       ├── 7-主力行为识别.py                   # 主力行为识别
+│   │       ├── data_loader.py                      # 数据加载模块
+│   │       └── db_config.py                        # 数据库配置
+│   │
+│   ├── 20-团队架构设计.pdf                         # 第二十次课讲义
+│   └── 20-团队架构设计-20260422/                   # 第二十次课代码与数据
+│       └── CASE-交易团队工作流（langgraph）/         # 交易团队工作流案例
+│           ├── .env.example                        # 环境变量配置示例
+│           ├── main.py                             # 团队工作流入口
+│           ├── graph.py                            # LangGraph 工作流图
+│           ├── state.py                            # 状态定义
+│           ├── scheduler.py                        # 调度器
+│           ├── requirements.txt                    # 依赖说明
+│           ├── nodes/                              # 多角色 Agent 节点
+│           │   ├── charles_node.py                 # Charles 投研节点
+│           │   ├── kris_node.py                    # Kris 风控节点
+│           │   ├── zoe_node.py                     # Zoe 宏观节点
+│           │   ├── trader_node.py                  # Trader 交易节点
+│           │   └── human_node.py                   # Human 人工审核节点
+│           ├── lib/                                # 工具库
+│           │   ├── miniqmt_trader.py               # miniQMT 交易员
+│           │   └── risk_engine.py                  # 风控引擎
+│           ├── scripts/                            # 辅助脚本
+│           │   ├── get_kline.py                    # 获取 K 线数据
+│           │   ├── run_backtest.py                 # 运行回测
+│           │   └── sync_charles_vendor.py          # 同步投研数据
+│           ├── vendor/charles_agent/               # Charles 投研 Agent
+│           └── outputs/                            # 研报与运行记录
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -619,6 +664,25 @@ git push gitee
 - 基于 RL 的交易策略：DQN 择时
 - 智能拆单环境与 TWAP 对比
 - 模型训练、回测与评估
+
+## Week 10
+
+### 19-强化学习与风控体系（2026-04-18）
+
+- 量化风控体系框架与核心模块
+- 风控引擎设计：仓位、止损、熔断
+- ATR 风控实战
+- 事件风控：大模型驱动的新闻事件识别
+- 宏观门控：VIX/QVIX 映射与市场状态过滤
+- 高频做市模拟与主力行为识别
+
+### 20-团队架构设计（2026-04-22）
+
+- 量化交易团队角色与分工
+- LangGraph 多 Agent 协作工作流
+- Charles 投研 / Kris 风控 / Zoe 宏观 / Trader 交易 / Human 审核节点
+- 状态机、调度器与端到端策略执行
+- 团队工作流的模块化设计与扩展
 
 ---
 
