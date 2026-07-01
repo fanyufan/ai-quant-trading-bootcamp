@@ -4,8 +4,8 @@ Desktop.ini
 scripts/
 
 # MASTER 开源数据（体积过大，不进入版本控制）
-week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/
-*.pkl
+# MASTER 开源训练/测试数据 pkl（体积过大，不进入版本控制）
+week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/*.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
