@@ -1,5 +1,7 @@
 # 课程目录与内容概览
 
+本课程按周组织，覆盖量化投资完整生命周期：数据获取、因子挖掘、模型构建、回测验证、风险管理、交易执行、实盘监控与迭代。详见 [docs/quant-trading-lifecycle.md](quant-trading-lifecycle.md)。
+
 ## 目录结构
 
 ```text
