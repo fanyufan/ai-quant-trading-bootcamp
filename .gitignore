@@ -1,10 +1,21 @@
-# 忽略文件
+# ==================== 项目自定义规则 ====================
+
+# Windows 系统文件
 Desktop.ini
+
+# Kimi Code agent 配置
 .agents/
+
+# 本地脚本（issue 创建工具等）
 scripts/
+
+# macOS 系统文件
+.DS_Store
 
 # MASTER 开源训练/测试数据 pkl（体积过大，不进入版本控制）
 week6/12-论文复现与策略进化-20260325/MASTER-master/data/opensource/*.pkl
+
+# ==================== Python 通用模板规则 ====================
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -69,11 +80,11 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
+# Flask stuff
 instance/
 .webassets-cache
 
-# Scrapy stuff:
+# Scrapy stuff
 .scrapy
 
 # Sphinx documentation
@@ -127,7 +138,6 @@ ipython_config.py
 
 # pixi
 #   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-# pixi.lock
 #   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
 #   in the .venv directory. It is recommended not to include this directory in version control.
 .pixi
@@ -224,9 +234,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-/scripts/
-
-# macOS
-.DS_Store
-# macOS
-.DS_Store
