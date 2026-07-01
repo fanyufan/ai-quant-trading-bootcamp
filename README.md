@@ -298,6 +298,61 @@ ai-quant-trading-bootcamp/
 │           ├── README.md                           # 官方说明
 │           └── LICENSE                             # 开源协议
 │
+├── week9/                                          # 第九周：Xtquant 实盘与 Agent 搭建实战 + 强化学习与高频探索
+│   │
+│   ├── 17-Xtquant实盘与Agent搭建实战.pdf           # 第十七次课讲义
+│   ├── 17-Xtquant实盘与Agent搭建实战-20260411/     # 第十七次课代码与数据
+│   │   ├── CASE-AI量化助手（nanobot）/             # AI 量化助手完整案例
+│   │   │   ├── agent.py                            # nanobot Agent 入口
+│   │   │   ├── config.json                         # Agent 配置
+│   │   │   ├── AGENTS.md                           # Agent 说明文档
+│   │   │   ├── .env.example                        # 环境变量配置示例
+│   │   │   ├── data/                               # 新闻、事件等输入数据
+│   │   │   ├── output/                             # 情感、事件、恐惧指数等输出
+│   │   │   ├── memory/                             # 记忆文件
+│   │   │   ├── reports/                            # 生成的研报
+│   │   │   ├── sessions/                           # 会话记录
+│   │   │   └── skills/                             # Agent 技能目录
+│   │   ├── CASE-XtQuant实盘交易/                   # XtQuant 实盘交易案例
+│   │   │   ├── .env.example                        # 环境变量配置示例
+│   │   │   ├── 1-query_account.py                  # 查询账户信息
+│   │   │   ├── 2-order_and_cancel.py               # 下单与撤单
+│   │   │   ├── 3-callback_demo.py                  # 回调演示
+│   │   │   ├── 4-miniqmt_trader.py                 # miniQMT 交易员
+│   │   │   └── 5-signal_to_order.py                # 信号转订单
+│   │   ├── CASE-nanobot使用/                       # nanobot 使用案例
+│   │   │   ├── content-builder/                    # 内容生成 Agent
+│   │   │   ├── deep-research/                      # 深度研究 Agent
+│   │   │   └── text-to-sql/                        # Text-to-SQL Agent
+│   │   ├── skill-nanobot/                          # skill 化 nanobot 配置
+│   │   └── nanobot-main/                           # nanobot 开源项目源码
+│   │       ├── nanobot/                            # Python 核心代码
+│   │       ├── bridge/                             # TypeScript Bridge
+│   │       ├── tests/                              # 单元测试
+│   │       ├── Dockerfile / docker-compose.yml     # 容器化配置
+│   │       ├── pyproject.toml                      # 项目配置
+│   │       ├── README.md                           # 官方说明
+│   │       └── LICENSE                             # 开源协议
+│   │
+│   ├── 18-强化学习与高频探索.pdf                   # 第十八次课讲义
+│   └── 18-强化学习与高频探索-20260415/             # 第十八次课代码与数据
+│       ├── CASE-cartpole-qlearning/                # CartPole Q-Learning 案例
+│       │   ├── agent.py                            # Q-Learning Agent
+│       │   └── cartpole.py                         # CartPole 环境交互
+│       ├── CASE-迷宫问题/                          # 迷宫 RL 案例
+│       │   └── maze.py                             # 迷宫求解
+│       └── CASE-基于RL的交易策略/                  # 基于 RL 的交易策略案例
+│           ├── .env.example                        # 环境变量配置示例
+│           ├── 1-搭建RL交易环境.py                 # 搭建 RL 交易环境
+│           ├── 2-DQN择时策略.py                    # DQN 择时策略
+│           ├── 3-策略回测与评估.py                 # 策略回测与评估
+│           ├── 4-智能拆单环境.py                   # 智能拆单环境
+│           ├── 5-TWAP与RL拆单对比.py               # TWAP 与 RL 拆单对比
+│           ├── data_loader.py                      # 数据加载模块
+│           ├── db_config.py                        # 数据库配置
+│           ├── models/                             # 训练好的 RL 模型
+│           └── outputs/                            # 训练与回测输出图表
+│
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -546,6 +601,24 @@ git push gitee
 - 恐惧指数、Polymarket 等另类情绪数据源
 - AI 量化助手完整工作流：数据 → 分析 → 报告
 - nanobot 开源项目源码解析与二次开发
+
+## Week 9
+
+### 17-Xtquant 实盘与 Agent 搭建实战（2026-04-11）
+
+- XtQuant 实盘交易接口：账户查询、下单撤单、回调机制
+- miniQMT 交易员封装与信号转订单
+- AI 量化助手与 nanobot 框架实战
+- nanobot 使用案例：内容生成、深度研究、Text-to-SQL
+- skill 化 nanobot 配置与扩展
+
+### 18-强化学习与高频探索（2026-04-15）
+
+- 强化学习基础：Q-Learning、DQN
+- CartPole 与迷宫问题实战
+- 基于 RL 的交易策略：DQN 择时
+- 智能拆单环境与 TWAP 对比
+- 模型训练、回测与评估
 
 ---
 
